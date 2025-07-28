@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manuel Maldonado — Lead Developer & Full Stack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #121212;
+      --primary: #1e90ff;
+      --accent: #00ffee;
+      --text: #e0e0e0;
+      --muted: #777;
+      --card-bg: #1e1e1e;
+      --project-highlight: #1e90ff;  /* Uniform project color */
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Montserrat", sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: var(--primary); text-decoration: none; }
+    nav {
+      position: fixed; top: 0; width: 100%; background: var(--bg);
+      padding: 1rem; text-align: right;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+    }
+    nav a { margin-left: 1.5rem; font-weight: 600; }
+    header { text-align: center; padding: 4rem 1rem; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; color: var(--muted); }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; }
+    section { margin-bottom: 4rem; }
+    .section-title {
+      font-size: 1.8rem; margin-bottom: 1rem;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+    }
+    /* Skills */
+    .skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skills-list span {
+      background: var(--card-bg); padding: 0.5rem 1rem;
+      border-radius: 20px; font-size: 0.9rem;
+    }
+    /* Skill metrics */
+    .skill-metric { margin-bottom: 1rem; }
+    .metric-label { display: block; margin-bottom: 0.3rem; color: var(--text); }
+    .metric-bar {
+      width: 100%; background: var(--card-bg);
+      border-radius: 5px; overflow: hidden;
+    }
+    .metric-fill { height: 10px; }
+    .metric-fill.blue   { background: #1e90ff; }
+    .metric-fill.teal   { background: #20c997; }
+    .metric-fill.purple { background: #6f42c1; }
+    .metric-fill.orange { background: #fd7e14; }
+    /* Timeline */
+    .timeline-item {
+      background: var(--card-bg); padding: 1rem;
+      border-radius: 8px; margin-bottom: 1rem;
+    }
+    .timeline-item h3 { margin-bottom: 0.3rem; color: var(--primary); }
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: var(--card-bg); border-radius: 8px;
+      padding: 1rem; transition: transform 0.3s;
+    }
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card h4 {
+      margin-bottom: 0.5rem;
+      color: var(--project-highlight);
+    }
+    /* Certifications */
+    #certifications ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      color: var(--text);
+    }
+    #certifications li { margin-bottom: 0.5rem; }
+    /* Footer */
+    footer {
+      text-align: center; padding: 2rem 1rem;
+      font-size: 0.9rem; color: var(--muted);
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <header>
+    <h1>Manuel Maldonado</h1>
+    <p>Lead Developer & Full Stack Expert</p>
+  </header>
+  <div class="container">
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>With over 12 years of expertise in .NET Core, C#, and cloud-native architectures on AWS & Azure, I design and implement robust microservices, scalable front-end interfaces, and seamless third-party integrations.</p>
+      <p>Passionate about code quality, SOLID principles, and delivering high-impact solutions in Agile environments.</p>
+    </section>
+    <section id="skills">
+      <h2 class="section-title">Skills Overview</h2>
+      <div class="skills-list">
+        <span>C#</span><span>.NET Core</span><span>Angular</span><span>React</span><span>SQL Server</span><span>AWS</span><span>Docker</span><span>CI/CD</span><span>SSIS</span><span>Material UI</span><span>Bootstrap</span>
+      </div>
+    </section>
+    <section id="skill-metrics">
+      <h2 class="section-title">Skill Metrics</h2>
+      <div class="skill-metric">
+        <span class="metric-label">C# (12+ yrs)</span>
+        <div class="metric-bar"><div class="metric-fill blue" style="width:100%;"></div></div>
+      </div>
+      <div class="skill-metric">
+        <span class="metric-label">.NET Core (8 yrs)</span>
+        <div class="metric-bar"><div class="metric-fill teal" style="width:80%;"></div></div>
+      </div>
+      <div class="skill-metric">
+        <span class="metric-label">Angular (6 yrs)</span>
+        <div class="metric-bar"><div class="metric-fill purple" style="width:60%;"></div></div>
+      </div>
+      <div class="skill-metric">
+        <span class="metric-label">React (3 yrs)</span>
+        <div class="metric-bar"><div class="metric-fill orange" style="width:30%;"></div></div>
+      </div>
+    </section>
+    <section id="experience">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="timeline-item">
+        <h3>Hexaware — .NET Cloud Developer</h3>
+        <small>Feb 2022 - Present</small>
+        <ul>
+          <li>Architected and maintained microservices on AWS Lambda, ECS using .NET Core 3-8.</li>
+          <li>Optimized backend workflows with Dapper, NHibernate, and SQL Server.</li>
+          <li>Enhanced React & Angular front-ends, resolving critical production issues.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <h3>Definity First — Full Stack Developer</h3>
+        <small>Jul 2015 - Dec 2022</small>
+        <ul>
+          <li>Built Blitz orchestration services integrating QuickBooks & SSIS.</li>
+          <li>Migrated Knockout.js modules to Angular 11 / Material UI for CEMEX.</li>
+          <li>Developed PRIMESPORT hotel & ticketing systems with high-volume SQL workflows.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <h3>Denumeris Interactive — Software Developer</h3>
+        <small>Jan 2013 - Jul 2016</small>
+        <ul>
+          <li>Created WPF & .NET MVC solutions for hotel reservation and CMS sites.</li>
+          <li>Designed search engine features using C# and SQL Server for MetLife.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="projects">
+      <h2 class="section-title">Highlighted Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h4>Blitz Automation</h4>
+          <p>Async orchestration between Blitz & QuickBooks using .NET Core & Angular.</p>
+          <a href="#">View Code</a>
+        </div>
+        <div class="project-card">
+          <h4>CEMEX Workflow</h4>
+          <p>Upgraded Knockout.js UI to Angular 11 & Material UI with REST APIs.</p>
+          <a href="#">Live Demo</a>
+        </div>
+        <div class="project-card">
+          <h4>PrimeSport Reservation</h4>
+          <p>High-volume hotel & ticketing system optimized with Dapper & NHibernate.</p>
+          <a href="#">Read Case Study</a>
+        </div>
+      </div>
+    </section>
+        <section id="certifications">
+      <h2 class="section-title">Certifications</h2>
+      <ul>
+        <li>Microsoft Certified: Azure Fundamentals (AZ-900)</li>
+        <li>Microsoft Certified: C# Programmer (70-483)</li>
+        <li>Microsoft Certified: HTML5, CSS3 & JavaScript Developer</li>
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>AWS Certified Developer – Associate</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a href="mailto:mmaldonadomendoza@gmail.com">mmaldonadomendoza@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/mmaldonadomendoza" target="_blank">github.com/mmaldonadomendoza</a></p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Manuel Maldonado • Built with ❤️ • Designed for GitHub Pages
+  </footer>
+</body>
+</html>
